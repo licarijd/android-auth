@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "102155097675",
+    "firebase_url": "https://comida-app-users.firebaseio.com",
+    "project_id": "comida-app-users",
+    "storage_bucket": "comida-app-users.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102155097675:android:edebfbb80f29d3b0",
+        "android_client_info": {
+          "package_name": "com.mobile.comida.comida"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102155097675-4tnqs764mjr279lol38sf0s550bsp7rb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaA40FdXl3EMs5rsYGgeU86ziCByPOMVs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
