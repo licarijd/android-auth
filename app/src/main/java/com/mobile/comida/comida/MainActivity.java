@@ -19,8 +19,16 @@ import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
+
+//Database imports
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.FirebaseDatabase;
+
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 
 public class MainActivity extends AppCompatActivity implements
         GoogleApiClient.OnConnectionFailedListener,
@@ -33,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements
     private static final String TAG = "GoogleActivity";
     private static final int RC_SIGN_IN = 9001;
 
+
+
     // [START declare_auth]
     //private FirebaseAuth mAuth;
     // [END declare_auth]
@@ -44,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -132,6 +143,15 @@ public class MainActivity extends AppCompatActivity implements
             //firebaseAuthWithGoogle(acct);
             statusTextView.setText("Hello " + acct.getDisplayName());
 
+            //Append rrray of reservation info to a list
+            DatabaseReference mDatabase;// ...
+            mDatabase = FirebaseDatabase.getInstance().getReference();
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            String uid = acct.getId();
+            statusTextView.setText(uid);
+            //mDatabase.child("users").child(uid).child("test").setValue("22222");
+            String[] reservation = new String[]{"01/01/17", "Jon's Burgers", "Justin L", "265", "1"};
+            mDatabase.child("users").child(uid).child("reservations").push().setValue("01/01/17_Jon's Burgers_Justin L_265_1");
         } else {
             statusTextView.setText("Unsuccessfull");
             //updateUI(null);

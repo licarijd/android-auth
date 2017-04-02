@@ -156,6 +156,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Justin\.android\build-cache\c8ef826c1d32d73bd3d4f1ce15757065cf4b292c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ef5c5c2afbd174d55cf1cfcac7d0346cbc4c1322">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\Comida\app\build\intermediates\pre-dexed\debug\classes_447207be94d36b53e876ef2956b792c484955c8e.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Justin\.android\build-cache\ee378c38097842130c0d9e32ebfa835df72e67cb\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -189,6 +198,15 @@
         revision="25.0.2"
         sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
         <dex dex="C:\Users\Justin\AndroidStudioProjects\Comida\app\build\intermediates\pre-dexed\debug\classes_e29d149c5de0ac8bf887d2643121b4396d996d64.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Justin\.android\build-cache\92cb42cf669568b7596924651b860e1eae58b244\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="32a5a566ae197603d0bed3e6d1d275f6a771564e">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\Comida\app\build\intermediates\pre-dexed\debug\classes_772caad2a6c1475c7becabbed32a25a32757ac38.jar" />
     </item>
     <item
         is-multidex="false"
