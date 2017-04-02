@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,6 +15,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
@@ -24,17 +26,21 @@ public class MainActivity extends AppCompatActivity implements
         GoogleApiClient.OnConnectionFailedListener,
         View.OnClickListener {
 
+    SignInButton signInButton;
+    Button signOutButton;
+    TextView statusTextView;
+    GoogleApiClient mGoogleApiClient;
     private static final String TAG = "GoogleActivity";
     private static final int RC_SIGN_IN = 9001;
 
     // [START declare_auth]
-    private FirebaseAuth mAuth;
+    //private FirebaseAuth mAuth;
     // [END declare_auth]
 
-    private GoogleApiClient mGoogleApiClient;
-    private TextView mStatusTextView;
-    private TextView mDetailTextView;
-    private ProgressDialog mProgressDialog;
+   // private GoogleApiClient mGoogleApiClient;
+    //private TextView mStatusTextView;
+    //private TextView mDetailTextView;
+   // private ProgressDialog mProgressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements
         // [START config_signin]
         // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
+                //.requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
         // [END config_signin]
@@ -59,17 +65,23 @@ public class MainActivity extends AppCompatActivity implements
 
 
         // Views
-        //mStatusTextView = (TextView) findViewById(R.id.status);
-       // mDetailTextView = (TextView) findViewById(R.id.detail);
+        statusTextView = (TextView) findViewById(R.id.status_textview);
+        signInButton = (SignInButton) findViewById(R.id.sign_in_button);
+        signInButton.setOnClickListener(this);
+
+        signOutButton = (Button) findViewById(R.id.signOutButton);
+        signOutButton.setOnClickListener(this);
+        //DetailTextView = (TextView) findViewById(R.id.detail);
+
 
         // Button listeners
-        findViewById(R.id.sign_in_button).setOnClickListener(this);
-        findViewById(R.id.sign_out_button).setOnClickListener(this);
+        //findViewById(R.id.sign_in_button).setOnClickListener(this);
+        //findViewById(R.id.signOutButton).setOnClickListener(this);
         //findViewById(R.id.disconnect_button).setOnClickListener(this);
 
 
         // [START initialize_auth]
-        mAuth = FirebaseAuth.getInstance();
+       // mAuth = FirebaseAuth.getInstance();
         // [END initialize_auth]
     }
 
@@ -82,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements
             case R.id.sign_in_button:
                 signIn();
                 break;
-            case R.id.sign_out_button:
+            case R.id.signOutButton:
                 signOut();
                 break;
             //case R.id.disconnect_button:
@@ -99,36 +111,6 @@ public class MainActivity extends AppCompatActivity implements
     }
     // [END signin]
 
-    private void signOut() {
-        // Firebase sign out
-        mAuth.signOut();
-
-        // Google sign out
-        Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
-                new ResultCallback<Status>() {
-                    @Override
-                    public void onResult(Status status) {
-                        updateUI(null);
-                    }
-                });
-    }
-
-    private void revokeAccess() {
-        // Firebase sign out
-        mAuth.signOut();
-
-        // Google revoke access
-        Auth.GoogleSignInApi.revokeAccess(mGoogleApiClient).setResultCallback(
-                new ResultCallback<Status>() {
-                    @Override
-                    public void onResult(Status status) {
-                        updateUI(null);
-                    }
-                });
-    }
-
-
-    // [START onactivityresult]
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -137,69 +119,53 @@ public class MainActivity extends AppCompatActivity implements
         if (requestCode == RC_SIGN_IN) {
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             // [START_EXCLUDE]
-            handleGoogleSignInResult(result);
+            handleSignInResult(result);
             // [END_EXCLUDE]
         }
     }
-    // [END onactivityresult]
 
-    private void handleGoogleSignInResult(GoogleSignInResult result) {
-        Log.d(TAG, "handleSignInResult:" + result.getStatus());
+    private void handleSignInResult(GoogleSignInResult result) {
+        Log.d(TAG, "handleSignInResult:" + result.isSuccess());
         if (result.isSuccess()) {
             // Successful Google sign in, authenticate with Firebase.
             GoogleSignInAccount acct = result.getSignInAccount();
-            // firebaseAuthWithGoogle(acct);
-            mStatusTextView.setText( acct.getEmail());
+            //firebaseAuthWithGoogle(acct);
+            statusTextView.setText("Hello " + acct.getDisplayName());
 
         } else {
-            // Unsuccessful Google Sign In, show signed-out UI
+            statusTextView.setText("Unsuccessfull");
             //updateUI(null);
         }
     }
-
 
     @Override
     public void onConnectionFailed(ConnectionResult connectionResult) {
         // An unresolvable error has occurred and Google APIs (including Sign-In) will not
         // be available.
         Log.d(TAG, "onConnectionFailed:" + connectionResult);
-        Toast.makeText(this, "Google Play Services error.", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Google Play Services error.", Toast.LENGTH_SHORT).show();
     }
 
-    private void showProgressDialog() {
-        if (mProgressDialog == null) {
-            mProgressDialog = new ProgressDialog(this);
-            //mProgressDialog.setMessage(getString(R.string.loading));
-            mProgressDialog.setIndeterminate(true);
-        }
+   // private void signOut() {
+     //   Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(new ResultCallback<Status>()(
+      //      @Override
+       //     public void onResult(@NonNull Status status) {
+        //        statusTextView.setText(("Signed Out"));
+        //        });
+  //  }
 
-        mProgressDialog.show();
+    private void signOut() {
+        // Firebase sign out
+        // mAuth.signOut();
+
+        // Google sign out
+        Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
+                new ResultCallback<Status>() {
+                    @Override
+                    public void onResult(Status status) {
+                        statusTextView.setText(("Signed Out"));
+                    }
+                });
     }
-
-    private void hideProgressDialog() {
-        if (mProgressDialog != null && mProgressDialog.isShowing()) {
-            mProgressDialog.hide();
-        }
-    }
-
-    private void updateUI(FirebaseUser user) {
-        hideProgressDialog();
-        if (user != null) {
-            //mStatusTextView.setText(getString(R.string.google_status_fmt, user.getEmail()));
-           // mDetailTextView.setText(getString(R.string.firebase_status_fmt, user.getUid()));
-
-            findViewById(R.id.sign_in_button).setVisibility(View.GONE);
-           // findViewById(R.id.sign_out_and_disconnect).setVisibility(View.VISIBLE);
-        } else {
-            //mStatusTextView.setText(R.string.signed_out);
-            mDetailTextView.setText(null);
-
-            findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
-            //findViewById(R.id.sign_out_and_disconnect).setVisibility(View.GONE);
-        }
-    }
-
-
-
 
 }

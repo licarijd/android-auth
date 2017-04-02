@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "102155097675-pojteo25kbklittulrrmug6jle4ejv56.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobile.comida.comida",
+            "certificate_hash": "5239910d9fd6394e6cf2787abf761e9c6f2117cf"
+          }
+        },
+        {
           "client_id": "102155097675-4tnqs764mjr279lol38sf0s550bsp7rb.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102155097675-4tnqs764mjr279lol38sf0s550bsp7rb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
