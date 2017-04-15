@@ -148,6 +148,10 @@
         "source": "C:\\Users\\Justin\\.android\\build-cache\\ba6a7651cd5d1bc636e76edf25fb1214469c6864\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
+        "merged": "C:\\Users\\Justin\\AndroidStudioProjects\\Comida\\app\\build\\intermediates\\res\\merged\\debug\\layout\\card_input_widget.xml",
+        "source": "C:\\Users\\Justin\\.android\\build-cache\\f780657a08134a06ce9553918f19d3f39001dd5c\\output\\res\\layout\\card_input_widget.xml"
+    },
+    {
         "merged": "C:\\Users\\Justin\\AndroidStudioProjects\\Comida\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
         "source": "C:\\Users\\Justin\\.android\\build-cache\\ba6a7651cd5d1bc636e76edf25fb1214469c6864\\output\\res\\layout\\notification_template_custom_big.xml"
     },

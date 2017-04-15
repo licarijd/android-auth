@@ -1,5 +1,12 @@
 package com.mobile.comida.comida;
 
+import com.stripe.android.model.Card;
+import com.stripe.android.Stripe;
+import com.stripe.android.model.Token;
+import com.stripe.android.view.CardInputWidget;
+import android.content.Context;
+import com.stripe.android.TokenCallback;
+
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -41,16 +48,18 @@ public class MainActivity extends AppCompatActivity implements
     private static final String TAG = "GoogleActivity";
     private static final int RC_SIGN_IN = 9001;
 
+    public static CardInputWidget inputWidget;
+    public static Card card;
+    //public static Context mContext;
 
-
-    // [START declare_auth]
-    //private FirebaseAuth mAuth;
-    // [END declare_auth]
-
-   // private GoogleApiClient mGoogleApiClient;
-    //private TextView mStatusTextView;
-    //private TextView mDetailTextView;
-   // private ProgressDialog mProgressDialog;
+    private static final TokenCallback DEFAULT_TOKEN_CALLBACK = new TokenCallback() {
+        @Override
+        public void onError(Exception error) {
+        }
+        @Override
+        public void onSuccess(Token token) {
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +85,9 @@ public class MainActivity extends AppCompatActivity implements
 
 
         // Views
+        //Make reference to card widget
+        inputWidget = (CardInputWidget) findViewById(R.id.card_input_widget);
+
         statusTextView = (TextView) findViewById(R.id.status_textview);
         signInButton = (SignInButton) findViewById(R.id.sign_in_button);
         signInButton.setOnClickListener(this);
@@ -98,6 +110,38 @@ public class MainActivity extends AppCompatActivity implements
 
 
 
+    public void validatePurchase(/*final Context mContext*/) {
+
+        Context mContext = getApplicationContext();
+
+        // Remember that the card object will be null if the user inputs invalid data.
+
+        card = inputWidget.getCard();
+
+        if (card == null) {
+            // Do not continue token creation.
+        }
+
+        Stripe stripe = new Stripe(mContext, "pk_test_tw59OlQl5z7eBiPkI5kL9bD7");
+        stripe.createToken(
+                card,
+                new TokenCallback() {
+                    public void onSuccess(Token token) {
+                        // Send token to your server
+                    }
+                    public void onError(Exception error) {
+                        // Show localized error message
+                        /*Toast.makeText(getContext(),
+                                error.getLocalizedString(getContext()),
+                                Toast.LENGTH_LONG
+                        ).show();*/
+                    }
+                }
+        );
+    }
+
+
+
 
     @Override
     public void onClick(View v) {
@@ -108,9 +152,9 @@ public class MainActivity extends AppCompatActivity implements
             case R.id.signOutButton:
                 signOut();
                 break;
-            //case R.id.disconnect_button:
-            //    revokeAccess();
-             //   break;
+            case R.id.purchaseButton:
+                validatePurchase();
+                break;
         }
     }
 

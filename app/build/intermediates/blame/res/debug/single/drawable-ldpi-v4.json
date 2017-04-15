@@ -1,6 +1,50 @@
 [
     {
+        "merged": "C:\\Users\\Justin\\AndroidStudioProjects\\Comida\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_error.png",
+        "source": "C:\\Users\\Justin\\.android\\build-cache\\f780657a08134a06ce9553918f19d3f39001dd5c\\output\\res\\drawable-ldpi-v4\\ic_error.png"
+    },
+    {
+        "merged": "C:\\Users\\Justin\\AndroidStudioProjects\\Comida\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_error_amex.png",
+        "source": "C:\\Users\\Justin\\.android\\build-cache\\f780657a08134a06ce9553918f19d3f39001dd5c\\output\\res\\drawable-ldpi-v4\\ic_error_amex.png"
+    },
+    {
+        "merged": "C:\\Users\\Justin\\AndroidStudioProjects\\Comida\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_cvc_amex.png",
+        "source": "C:\\Users\\Justin\\.android\\build-cache\\f780657a08134a06ce9553918f19d3f39001dd5c\\output\\res\\drawable-ldpi-v4\\ic_cvc_amex.png"
+    },
+    {
+        "merged": "C:\\Users\\Justin\\AndroidStudioProjects\\Comida\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_unknown.png",
+        "source": "C:\\Users\\Justin\\.android\\build-cache\\f780657a08134a06ce9553918f19d3f39001dd5c\\output\\res\\drawable-ldpi-v4\\ic_unknown.png"
+    },
+    {
+        "merged": "C:\\Users\\Justin\\AndroidStudioProjects\\Comida\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_visa.png",
+        "source": "C:\\Users\\Justin\\.android\\build-cache\\f780657a08134a06ce9553918f19d3f39001dd5c\\output\\res\\drawable-ldpi-v4\\ic_visa.png"
+    },
+    {
+        "merged": "C:\\Users\\Justin\\AndroidStudioProjects\\Comida\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_mastercard.png",
+        "source": "C:\\Users\\Justin\\.android\\build-cache\\f780657a08134a06ce9553918f19d3f39001dd5c\\output\\res\\drawable-ldpi-v4\\ic_mastercard.png"
+    },
+    {
+        "merged": "C:\\Users\\Justin\\AndroidStudioProjects\\Comida\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_discover.png",
+        "source": "C:\\Users\\Justin\\.android\\build-cache\\f780657a08134a06ce9553918f19d3f39001dd5c\\output\\res\\drawable-ldpi-v4\\ic_discover.png"
+    },
+    {
         "merged": "C:\\Users\\Justin\\AndroidStudioProjects\\Comida\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\common_ic_googleplayservices.png",
         "source": "C:\\Users\\Justin\\.android\\build-cache\\20cd11095b47f8fdcd4d4eb57382ef2e25d101b3\\output\\res\\drawable-ldpi-v4\\common_ic_googleplayservices.png"
+    },
+    {
+        "merged": "C:\\Users\\Justin\\AndroidStudioProjects\\Comida\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_diners.png",
+        "source": "C:\\Users\\Justin\\.android\\build-cache\\f780657a08134a06ce9553918f19d3f39001dd5c\\output\\res\\drawable-ldpi-v4\\ic_diners.png"
+    },
+    {
+        "merged": "C:\\Users\\Justin\\AndroidStudioProjects\\Comida\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_jcb.png",
+        "source": "C:\\Users\\Justin\\.android\\build-cache\\f780657a08134a06ce9553918f19d3f39001dd5c\\output\\res\\drawable-ldpi-v4\\ic_jcb.png"
+    },
+    {
+        "merged": "C:\\Users\\Justin\\AndroidStudioProjects\\Comida\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_cvc.png",
+        "source": "C:\\Users\\Justin\\.android\\build-cache\\f780657a08134a06ce9553918f19d3f39001dd5c\\output\\res\\drawable-ldpi-v4\\ic_cvc.png"
+    },
+    {
+        "merged": "C:\\Users\\Justin\\AndroidStudioProjects\\Comida\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_amex.png",
+        "source": "C:\\Users\\Justin\\.android\\build-cache\\f780657a08134a06ce9553918f19d3f39001dd5c\\output\\res\\drawable-ldpi-v4\\ic_amex.png"
     }
 ]

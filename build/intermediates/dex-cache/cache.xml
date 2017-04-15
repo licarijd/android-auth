@@ -84,6 +84,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Justin\.android\build-cache\f780657a08134a06ce9553918f19d3f39001dd5c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="76fe2b94a41964ee83db7adddb7a03a211c22771">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\Comida\app\build\intermediates\pre-dexed\debug\classes_17e0344e84f590243df72d3fcb96ba19046dcbfc.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Justin\.android\build-cache\aa457f5f9634bbd2471ee096a41c51911d791be4\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"

@@ -15,9 +15,6 @@ ADDED from C:\Users\Justin\AndroidStudioProjects\Comida\app\src\main\AndroidMani
 		INJECTED from C:\Users\Justin\AndroidStudioProjects\Comida\app\src\main\AndroidManifest.xml
 application
 ADDED from C:\Users\Justin\AndroidStudioProjects\Comida\app\src\main\AndroidManifest.xml:5:5-19:19
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Justin\.android\build-cache\ba6a7651cd5d1bc636e76edf25fb1214469c6864\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Justin\.android\build-cache\6fd275a26b0cf83049fc2077ad5c7f16c662fb1d\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Justin\.android\build-cache\b3f2567823f2f8fedbbb1edc9f6e4eb9e4eb0ce1\output\AndroidManifest.xml:26:5-20
 MERGED from [com.google.firebase:firebase-core:9.0.0] C:\Users\Justin\.android\build-cache\839d93de331ff87f9276aa74e57bc3a5d5b5d8cf\output\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Justin\.android\build-cache\9ca3cbced972f1bec3cb14cc07a816f2a1c92e6a\output\AndroidManifest.xml:26:5-41:19
 MERGED from [com.google.firebase:firebase-analytics-impl:9.0.0] C:\Users\Justin\.android\build-cache\c9d9fac8331d672299201f1e0301b66d7f8a465e\output\AndroidManifest.xml:26:5-41:19
@@ -29,13 +26,16 @@ MERGED from [com.google.android.gms:play-services-base:9.0.0] C:\Users\Justin\.a
 MERGED from [com.google.firebase:firebase-common:9.0.0] C:\Users\Justin\.android\build-cache\452be094dc6ef21bf2c6c563e8f6f0e469f50ad2\output\AndroidManifest.xml:5:5-12:19
 MERGED from [com.google.android.gms:play-services-tasks:9.0.0] C:\Users\Justin\.android\build-cache\89ee1befe02b40c7fdf2e25829ea789992df9705\output\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-basement:9.0.0] C:\Users\Justin\.android\build-cache\aa457f5f9634bbd2471ee096a41c51911d791be4\output\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Justin\.android\build-cache\590a41b631d85578e9c307bc466d8749b01ae360\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Justin\.android\build-cache\ba6a7651cd5d1bc636e76edf25fb1214469c6864\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Justin\.android\build-cache\bbea4403d5222ed783e8047e7dd33ad13d4f8236\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Justin\.android\build-cache\642f6ed8ee5a0009d38a7815e235a2c27fa58f51\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Justin\.android\build-cache\a255ad2f714d2bd8e6bf56539cdf1547b48c51c3\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Justin\.android\build-cache\e0b5b41c9580e0cc759a7dc82c4fd03bb74bbf30\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Justin\.android\build-cache\06084b58017c9fdacec63547d4fe056d2fdc031d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Justin\.android\build-cache\6fd275a26b0cf83049fc2077ad5c7f16c662fb1d\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Justin\.android\build-cache\b3f2567823f2f8fedbbb1edc9f6e4eb9e4eb0ce1\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Justin\.android\build-cache\cd968a00758cd0e25bbd79e4587a097fd10bc5b9\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Justin\.android\build-cache\590a41b631d85578e9c307bc466d8749b01ae360\output\AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from C:\Users\Justin\AndroidStudioProjects\Comida\app\src\main\AndroidManifest.xml:8:9-41
 	android:supportsRtl
@@ -64,9 +64,6 @@ ADDED from C:\Users\Justin\AndroidStudioProjects\Comida\app\src\main\AndroidMani
 		ADDED from C:\Users\Justin\AndroidStudioProjects\Comida\app\src\main\AndroidManifest.xml:16:27-74
 uses-sdk
 INJECTED from C:\Users\Justin\AndroidStudioProjects\Comida\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Justin\.android\build-cache\ba6a7651cd5d1bc636e76edf25fb1214469c6864\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Justin\.android\build-cache\6fd275a26b0cf83049fc2077ad5c7f16c662fb1d\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Justin\.android\build-cache\b3f2567823f2f8fedbbb1edc9f6e4eb9e4eb0ce1\output\AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-core:9.0.0] C:\Users\Justin\.android\build-cache\839d93de331ff87f9276aa74e57bc3a5d5b5d8cf\output\AndroidManifest.xml:4:5-42
 MERGED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Justin\.android\build-cache\9ca3cbced972f1bec3cb14cc07a816f2a1c92e6a\output\AndroidManifest.xml:18:5-42
 MERGED from [com.google.firebase:firebase-analytics-impl:9.0.0] C:\Users\Justin\.android\build-cache\c9d9fac8331d672299201f1e0301b66d7f8a465e\output\AndroidManifest.xml:18:5-42
@@ -82,13 +79,17 @@ MERGED from [com.google.android.gms:play-services-base:9.0.0] C:\Users\Justin\.a
 MERGED from [com.google.firebase:firebase-common:9.0.0] C:\Users\Justin\.android\build-cache\452be094dc6ef21bf2c6c563e8f6f0e469f50ad2\output\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks:9.0.0] C:\Users\Justin\.android\build-cache\89ee1befe02b40c7fdf2e25829ea789992df9705\output\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-basement:9.0.0] C:\Users\Justin\.android\build-cache\aa457f5f9634bbd2471ee096a41c51911d791be4\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Justin\.android\build-cache\590a41b631d85578e9c307bc466d8749b01ae360\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.stripe:stripe-android:4.0.0] C:\Users\Justin\.android\build-cache\f780657a08134a06ce9553918f19d3f39001dd5c\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Justin\.android\build-cache\ba6a7651cd5d1bc636e76edf25fb1214469c6864\output\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Justin\.android\build-cache\bbea4403d5222ed783e8047e7dd33ad13d4f8236\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Justin\.android\build-cache\642f6ed8ee5a0009d38a7815e235a2c27fa58f51\output\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Justin\.android\build-cache\a255ad2f714d2bd8e6bf56539cdf1547b48c51c3\output\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Justin\.android\build-cache\e0b5b41c9580e0cc759a7dc82c4fd03bb74bbf30\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Justin\.android\build-cache\06084b58017c9fdacec63547d4fe056d2fdc031d\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Justin\.android\build-cache\6fd275a26b0cf83049fc2077ad5c7f16c662fb1d\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Justin\.android\build-cache\b3f2567823f2f8fedbbb1edc9f6e4eb9e4eb0ce1\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Justin\.android\build-cache\cd968a00758cd0e25bbd79e4587a097fd10bc5b9\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Justin\.android\build-cache\590a41b631d85578e9c307bc466d8749b01ae360\output\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Justin\.android\build-cache\ba6a7651cd5d1bc636e76edf25fb1214469c6864\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -97,20 +98,6 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ju
 	android:minSdkVersion
 		INJECTED from C:\Users\Justin\AndroidStudioProjects\Comida\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Justin\AndroidStudioProjects\Comida\app\src\main\AndroidManifest.xml
-meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Justin\.android\build-cache\ba6a7651cd5d1bc636e76edf25fb1214469c6864\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Justin\.android\build-cache\6fd275a26b0cf83049fc2077ad5c7f16c662fb1d\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Justin\.android\build-cache\b3f2567823f2f8fedbbb1edc9f6e4eb9e4eb0ce1\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Justin\.android\build-cache\bbea4403d5222ed783e8047e7dd33ad13d4f8236\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Justin\.android\build-cache\642f6ed8ee5a0009d38a7815e235a2c27fa58f51\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Justin\.android\build-cache\a255ad2f714d2bd8e6bf56539cdf1547b48c51c3\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Justin\.android\build-cache\e0b5b41c9580e0cc759a7dc82c4fd03bb74bbf30\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Justin\.android\build-cache\06084b58017c9fdacec63547d4fe056d2fdc031d\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Justin\.android\build-cache\cd968a00758cd0e25bbd79e4587a097fd10bc5b9\output\AndroidManifest.xml:25:5-27:34
-	android:value
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Justin\.android\build-cache\ba6a7651cd5d1bc636e76edf25fb1214469c6864\output\AndroidManifest.xml:27:9-31
-	android:name
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Justin\.android\build-cache\ba6a7651cd5d1bc636e76edf25fb1214469c6864\output\AndroidManifest.xml:26:9-47
 uses-permission#android.permission.INTERNET
 ADDED from [com.google.firebase:firebase-analytics:9.0.0] C:\Users\Justin\.android\build-cache\9ca3cbced972f1bec3cb14cc07a816f2a1c92e6a\output\AndroidManifest.xml:21:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:9.0.0] C:\Users\Justin\.android\build-cache\c9d9fac8331d672299201f1e0301b66d7f8a465e\output\AndroidManifest.xml:21:5-67
@@ -249,3 +236,17 @@ ADDED from [com.google.android.gms:play-services-basement:9.0.0] C:\Users\Justin
 		ADDED from [com.google.android.gms:play-services-basement:9.0.0] C:\Users\Justin\.android\build-cache\aa457f5f9634bbd2471ee096a41c51911d791be4\output\AndroidManifest.xml:23:13-66
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:9.0.0] C:\Users\Justin\.android\build-cache\aa457f5f9634bbd2471ee096a41c51911d791be4\output\AndroidManifest.xml:22:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Justin\.android\build-cache\ba6a7651cd5d1bc636e76edf25fb1214469c6864\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Justin\.android\build-cache\bbea4403d5222ed783e8047e7dd33ad13d4f8236\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Justin\.android\build-cache\642f6ed8ee5a0009d38a7815e235a2c27fa58f51\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Justin\.android\build-cache\a255ad2f714d2bd8e6bf56539cdf1547b48c51c3\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Justin\.android\build-cache\e0b5b41c9580e0cc759a7dc82c4fd03bb74bbf30\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Justin\.android\build-cache\06084b58017c9fdacec63547d4fe056d2fdc031d\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Justin\.android\build-cache\6fd275a26b0cf83049fc2077ad5c7f16c662fb1d\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Justin\.android\build-cache\b3f2567823f2f8fedbbb1edc9f6e4eb9e4eb0ce1\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Justin\.android\build-cache\cd968a00758cd0e25bbd79e4587a097fd10bc5b9\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Justin\.android\build-cache\ba6a7651cd5d1bc636e76edf25fb1214469c6864\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Justin\.android\build-cache\ba6a7651cd5d1bc636e76edf25fb1214469c6864\output\AndroidManifest.xml:26:9-47

@@ -29,6 +29,15 @@
         android:layout_height="wrap_content"
         android:text="Sign out"
         android:id="@+id/signOutButton" />
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Purchase"
+        android:id="@+id/purchaseButton" />
+    <com.stripe.android.view.CardInputWidget
+        android:id="@+id/card_input_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     </LinearLayout>
 </RelativeLayout>
 
